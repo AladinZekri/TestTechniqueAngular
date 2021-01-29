@@ -1,0 +1,16 @@
+<h4>
+    <p>
+     Cette application calcule le nombre de ponctuation dans un texte saisie. <br> 
+    Les ponctuations prises en considération sont : « , » , « . », « ; », « : » , « ! » , « ? »
+    </p>
+</h4>
+
+    <h3 style="color: #24a0ed;">Veuillez taper votre texte :</h3>
+
+    <textarea  rows="10" cols="90" [(ngModel)]="text" name="text" (keyup)="onKey($event)">
+    </textarea>
+
+    <br>
+    
+<label>Le nombre de ponctuation : <span style="color: green;"> {{nbr}}</span> </label>
+
